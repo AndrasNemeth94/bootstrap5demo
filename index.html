@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Bootstrap 5 CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Bootstrap 5 icons cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!--styles css-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--Google font Raleway-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <!--Favicon-->
+    <link rel="icon" href="./img/favicon.ico" />
+    <title>FrontEnd Bootcamp</title>
+  </head>
+  <body>
+    <!--Bootstrap javascript bundle-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-2 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">FrontEnd Bootcamp</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav_menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav_menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">What You'll learn</a>
+            </li>
+            <li class="nav-item">
+              <a href="#packages" class="nav-link">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Instructors</a>
+            </li>
+            <li class="nav-item">
+              <a href="#faq" class="nav-link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Arrow-->
+    <a class="arrow-hover" type="button" href="#"
+      ><h1 class="text-center"><i class="bi bi-arrow-bar-up"></i></h1
+    ></a>
+
+    <!--Showcase-->
+    <section class="bg-dark text-light pt-5 pb-3 pb-md-0 text-center">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between py-2">
+          <div>
+            <h1 class="fw-bold">
+              Become a <span class="text-primary">Web Developer</span> today!
+            </h1>
+            <p class="lead my-4">
+              Our passion is to teach coding to newcomers on a whole new level.
+              Grab your free 3 days trial key and jump into a new world of web
+              development with cutting-edge technologies, friendly mentors, and
+              last but surely not least loads of coffee.
+              <!-- <p class="emoji">&#128512;</p> -->
+            </p>
+            <div>
+              <button
+                class="btn btn-primary btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#start"
+              >
+                Start
+              </button>
+            </div>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="./img/hacker.svg"
+            alt="hacker"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Newsletter-->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0 fw-bold">Sign up for Newsletter</h3>
+
+          <div class="input-group news-letter">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Type e-mail here..."
+            />
+            <button class="btn btn-lg btn-dark" type="button">Button</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Boxes-->
+    <section class="p-5" id="packages">
+      <div class="container">
+        <div class="row text-center p-3 g-4">
+          <div class="col-md p-sm-2">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1"><i class="bi bi-award"></i></div>
+                <h3 class="card-title">Bronze Pack</h3>
+                <p class="card-text">
+                  Bronze Pack offers you the opportunity to be introduced to
+                  basic web development & design. You can enter the world of
+                  cutting-edge technologies and innovative ideas in just a short
+                  amount of time. It takes up four weeks, 80 hours total. You
+                  will be able to design and create your own static website with
+                  the usage of HTML5 and CSS3.
+                </p>
+                <a href="#" class="btn btn-primary">100$</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md p-sm-2">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1"><i class="bi bi-award"></i></div>
+                <h3 class="card-title">Silver Pack</h3>
+                <p class="card-text">
+                  Silver Pack introduces the most required front-end frameworks
+                  in web development like Angular.js and React.js. After you
+                  finished your first four weeks of learning about HTML5 and
+                  CSS3, you will be teached to create interactive websites with
+                  the basics like user input management and dynamic content
+                  creation. The course takes 240 hours in total.
+                </p>
+                <a href="#" class="btn btn-primary">200$</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md p-sm-2">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1"><i class="bi bi-award"></i></div>
+                <h3 class="card-title">Golden Pack</h3>
+                <p class="card-text">
+                  Silver Pack includes Bronze and Silver packages as well. After
+                  you finished your courses, Golden Pack provides you knowledge
+                  on database types, the ways of communicate with them from the
+                  front end, and you will also be able to write you own back-end
+                  in Express.js for e-commerce websites. The course takes 480
+                  hours in total.
+                </p>
+                <a href="#" class="btn btn-primary">300$</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Learn section-->
+    <section class="bg-dark text-light text-center p-5" id="learn">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md p-2">
+            <h1 class="text-primary fw-bold">Encouragement</h1>
+            <p class="lead">
+              Having a winner-mindset is key to learn web development. You'll
+              definetely be overwhelmed by the amount of "must-have" knowledge
+              and tools, but you should not back down!
+            </p>
+            <a href="#" class="btn btn-large btn-primary">Read More</a>
+          </div>
+          <div class="col-md p-2">
+            <img src="./img/wd.png" class="img-fluid" alt="web_development" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FAQ-->
+    <section class="text-center align-items-center p-5">
+      <h1 class="text-primary fw-bold">FAQ</h1>
+      <div class="container">
+        <div class="accordion accordion-flush" id="faq">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+              >
+                <span class="question"
+                  >How much time does it take to attend the course?</span
+                >
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                It differs from package to package, but overall we can say that
+                it is between 4 weeks to 3 months.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+              >
+                <span class="question">How much does it cost?</span>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                It is also different based on the package you choose: the
+                minimum amount of money you have to pay before we start is 100$,
+                the maximum amount for Golden Package is 300$. According to your
+                personal preference (extra hours, practices, personal projects
+                etc.) it can be more, but it is on you and your instructor
+                personally to negotiate about the cost for extra services.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+              >
+                <span class="question"
+                  >Is there any guarantee that I can land a job after this
+                  course?</span
+                >
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Sadly, we cannot guarantee your instant success on the
+                "battlefield" according to the cureent state of the job market,
+                but we can offer a 15% payback option for those who couldn't
+                land a developer job in a one year time interval after attending
+                our course.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Instructors-->
+    <section id="instructors" class="bg-primary p-5 text-center">
+      <div class="container">
+        <h1 class="text-light fw-bold">Meet our Instructors</h1>
+        <div class="row justify-content-center g-4 mt-3">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-dark text-dark">
+              <div class="card-body text-center p-2">
+                <img
+                  src="https://randomuser.me/api/portraits/men/15.jpg"
+                  class="rounded-circle mb-3"
+                  alt="men12"
+                />
+                <h3 class="card-title mb-3 text-light">Jonathan McElroy</h3>
+                <p class="card-text text-light">
+                  Hi! My name is jonathan, ex-Google developer. I am more than
+                  ready to teach you some cool designs and coding tricks.
+                </p>
+                <div class="d-flex-row">
+                  <a class="text-light m-2" href="#"
+                    ><i class="bi-instagram"></i
+                  ></a>
+                  <a class="text-light m-2" href="#"
+                    ><i class="bi-linkedin"></i
+                  ></a>
+                  <a class="text-light m-2" href="#"
+                    ><i class="bi-twitter"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-dark text-dark">
+              <div class="card-body text-center p-2">
+                <img
+                  src="https://randomuser.me/api/portraits/men/16.jpg"
+                  class="rounded-circle mb-3"
+                  alt="men12"
+                />
+                <h3 class="card-title mb-3 text-light">Drew White</h3>
+                <p class="card-text text-light">
+                  Drew is the name, API is the game. If you want to learn some
+                  api calls and back-end magic, I'll see you in the battlefield!
+                </p>
+                <div class="d-flex-row">
+                  <a class="text-light m-2" href="#"
+                    ><i class="bi-instagram"></i
+                  ></a>
+                  <a class="text-light m-2" href="#"
+                    ><i class="bi-linkedin"></i
+                  ></a>
+                  <a class="text-light m-2" href="#"
+                    ><i class="bi-twitter"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-dark text-dark">
+              <div class="card-body text-center p-2">
+                <img
+                  src="https://randomuser.me/api/portraits/women/15.jpg"
+                  class="rounded-circle mb-3"
+                  alt="men12"
+                />
+                <h3 class="card-title mb-3 text-light">Cathy Wells</h3>
+                <p class="card-text text-light">
+                  I'm Cathy, nice to meet you!I would be responsible for your
+                  CSS skill growth in the near future. Lets have fun together!
+                </p>
+                <div class="d-flex-row">
+                  <a class="text-light m-2" href="#"
+                    ><i class="bi-instagram"></i
+                  ></a>
+                  <a class="text-light m-2" href="#"
+                    ><i class="bi-linkedin"></i
+                  ></a>
+                  <a class="text-light m-2" href="#"
+                    ><i class="bi-twitter"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact info and Map-->
+    <section class="bg-dark text-light p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="mb-4 text-primary text-center fw-bold">Contact info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Location: 66 Narrow St SF</span>
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Phone: +36 42 42 42</span>
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Email: notfakebootcamp@gmail.com</span>
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Location: 66 Narrow St SF</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <div class="section bg-dark text-center text-light p-5">
+      <div class="container">
+        <p>Copyright &copy; 2021 FrontEnd Bootcamp</p>
+      </div>
+    </div>
+
+    <!--Modal-->
+    <div
+      class="modal"
+      id="start"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <h3 class="text-primary text-center">Start Enrollment</h3>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Please fill this form</p>
+            <form action="POST">
+              <div class="mb-3">
+                <label for="first-name" class="call-form-label"
+                  >First Name</label
+                >
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+
+              <div class="mb-3">
+                <label for="last-name" class="call-form-label">Last Name</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+
+              <div class="mb-3">
+                <label for="phone" class="call-form-label">Phone</label>
+                <input type="text" class="form-control" id="phone" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="call-form-label">Email</label>
+                <input type="text" class="form-control" id="email" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
